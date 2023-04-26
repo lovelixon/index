@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-color: rgb(255, 128, 0);
+          color:rgb(0, 85, 255);
+          font-size: 50px;
+        }
+        marquee{
+          background-color:pink ;
+        }
+      </style>
+</head>
+<body>
+    <script>
+        let max=+prompt("Введіть максимальне число",100)
+        for(i=0;i<100;i++){
+            document.writeln(Math.round(Math.random()*max))
+        }
+    </script>
+</body>
+</html>

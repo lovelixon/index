@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+   background-image: url(https://i.pinimg.com/originals/6c/4f/bf/6c4fbf3344b975c5b5a03401e8508620.gif);
+   background: size 600px;
+   background-repeat: no-repeat;
+   background-position: 100% 100%;
+   background-attachment: fixed;
+  }    
+        </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css??
+family=Marck+Script&family-Rubik+Beastly&
+family=Rubik+Moonrocks&display-swap" rel="stylesheet">
+    <style>
+    body{
+          background-color:white;
+          color: green;
+          font-size: 50px;
+        }
+
+    
+  </style>
+</head>
+<body>
+    <script>
+   /* let numbers = ["Нуль", "Один", "Два"];
+alert(numbers [0] ); // Hуль
+alert(numbers [1] ); // OдИн
+alert(numbers [2] ); // Два
+numbers [2] = "не два"; // тепер ["Нуль", "Один", "не два"]
+alert(numbers);
+numbers [3] = "Три"; // тепер ["Нуль", "Один", "не два", "Три"]
+alert(numbers);*/
+/*let colors=["yellow","blue"];
+alert(colors);
+colors[2]="red";
+alert(colors);
+colors[colors.length-2]="black"
+alert(colors);
+colors.shift();
+(colors);alert
+colors.unshift("green","orange")
+alert(colors);*/
+let compliments=["funny","smart","cool", "genius","clever", "sensible","cheerful","generous","kind","creative","quick-witted","hard-working","determined","optimistic","determined"]
+let animals=["polar bear", "cat","leopard","butterfly","duck","rabbit","ladybug", "monkey","rhino","squirrel","lion","chicken","cow"]
+let colors=["red","yellow","blue","green","orange","pink","purple","violet"]
+
+let number= +prompt("How many compliments do you want?",100)
+        for (i = 1; i <= number; i++){
+            let rand1=Math.floor(Math.random()*colors.length)
+
+            let rand2=Math.floor(Math.random()*compliments.length)
+            let rand3=Math.floor(Math.random()*animals.length)
+
+            document.writeln(`<p style='color:${colors[rand1]}'>${i} ) You are so ${compliments[rand2]} as ${animals[rand3]}! </p>`);
+        }
+       
+    
+    </script>
+</body>
+</html>

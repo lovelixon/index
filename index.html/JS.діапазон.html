@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(0, 255, 47);
+        color:rgb(140, 0, 255);
+        font-size: 50px;
+      }
+      marquee{
+        background-color:pink ;
+      }
+    </style>
+</head>
+<body>
+    <script>
+      let min=+prompt("Enter min", 0)
+let max=+prompt("Enter min", 100)
+let sum=0;
+for (let i= min; i <= max; i++){
+  sum=sum+i;
+}
+document.write(`Сума чисел в діапазоні від ${min} до ${max} дорівнює ${sum}`)
+
+    </script>
+</body>
+</html>

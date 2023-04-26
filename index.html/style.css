@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.intro{
+    height: 400px;
+    display: flex;
+}
+h1{
+text-align: center;
+}
+#content{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(43, 70, 226);
+    float: center;
+}

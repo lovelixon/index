@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	 body{
+          background-color: rgb(255, 213, 0);
+          color:rgb(0, 85, 255);
+          font-size: 50px;
+        }
+	div#container {
+    background-image:
+    url('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg');
+    width: 640px;
+    height: 374px;
+}
+		.box{
+			background: url(https://img.pikbest.com/back_our/bg/20200529/bg/6d654bf26393d_337560.png!bwr800);
+			height: 100px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			text-align: center;
+		}
+		div{
+			font-size: 50px; 
+			color: green;
+			text-align: center;
+		}
+		.sq{
+			width: 50px;
+			height: 50px;
+			font-size: 36px;
+			text-align: center;
+		}
+		.btn{
+			width: 250px;
+			height: 50px;
+			font-size: 36px;
+			color: purple;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	function triangle() {
+  let a = +document.tr.a.value;
+  let b = +document.tr.b.value;
+  let c = +document.tr.c.value;
+  let sol = document.getElementById("tr_sol");
+  
+if (a<=0||b<=0||c<=0||(a+b)<=c||(a+c)<=b||(b+c)<=a){
+    string="трикутника не існує"
+}else{
+let P=a+b+c;
+let p=P/2;
+let S=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+string="Периметр трикутника дорівнює " +P+"<br>"+"Площа трикутника дорівнює " +S
+}
+	  sol.innerHTML = string;
+}
+
+	</script>
+	<div>
+<p>Знаходження периметру та площі трикутника</p>
+<form name="tr" action="javascript:triangle()">
+a <input class="sq" name="a" type="text" value="3" size="4">
+b <input class="sq"  name="b" type="text" value="4" size="4">
+c <input class="sq"  name="c" type="text" value="5" size="4">
+<input class="btn" type="submit" value="Розрахувати">
+<input class="btn" type="reset" name="reset" value="Скинути">
+</form>
+Рішення: <span id="tr_sol">Введить сторони трикутника та натисніть "Розрахувати"</span>
+</div>
+</body>
+</html>

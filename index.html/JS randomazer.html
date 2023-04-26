@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+        body{
+          background-color: rgb(0, 255, 47);
+          color:rgb(0, 85, 255);
+          font-size: 50px;
+        }
+        marquee{
+          background-color:pink ;
+        }
+  </style>
+ </head>  
+<body>
+    <script>
+        let min=+prompt("Введіть мінімальне число")
+let max=+prompt("Введіть максимальне число")
+let numX=Math.round(min+Math.random()*(max-min));
+let num;
+let count=0;
+do{
+   
+    num=prompt("Введіть число",0);
+    count++
+    if(num==null){
+        alert("До побачення!")
+    }else if(count>8){
+        alert("Ви використали свій ліміт спроб. На жаль Ви не вгадали. До побачення!")
+    }else if(+num>numX){
+        alert(`Спроба №${count}. Ваше число більше, ніж те, що потрібно`)
+    }else if(+num<numX){
+       alert(`Спроба №${count}. Ваше число менше, ніж те, що потрібно`)
+    }else if(+num==numX){
+        alert("Ви вгадали! Загадане число: "+numX+ ". Кількість спроб: "+ count)    
+    }else{
+        alert("Ви ввели не число")
+    }
+}while (num!=numX && num!=null && count<=8);
+    </script>
+</body>
+</html>

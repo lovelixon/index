@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-color: rgb(115, 0, 255);
+          color:rgb(0, 85, 255);
+          font-size: 50px;
+        }
+        marquee{
+          background-color:pink ;
+        }
+  </style>
+</head>
+<body>
+    <script>
+  /* function bigOne(str) {
+ // Порожній рядок під час такої перевірки дає 0  if (str.charAt(0)==0) return str= 'Прохання, не вводьте порожніх рядків ';
+  return str[0].toUpperCase() + str.slice(1); // тут ми перестворимо рядок
+}
+let strInBigOne = prompt("Введіть рядок", "ім'я пишеться з великої літери");
+alert( bigOne(strInBigOne) ); */
+/*function findSpam(str) {  
+let lowCaseStr = str.toLowerCase();  
+return !!(~lowCaseStr.indexOf('безкоштовно') || ~lowCaseStr.indexOf('гарантія'));  }  
+alert( 'Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання'+ ' перевірка на спам : ' + findSpam('Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання ') );  
+alert('Це гарантія, що ви виграєте' + 'перевірка на спам : ' + findSpam('Це гарантія, що ви виграєте ') );
+alert('Привіт як справи?'+ ' перевірка на спам : ' + findSpam('Привіт як справи?') );*/
+/*let str = "бредуть бобри в сирі бори. бобри хоробрі, а для бобрят добрі ";
+let target = prompt("Введіть підрядок для пошуку","ри"); // мета пошуку
+let position = 0;
+// Довжину рядка визначати не будемо використовуємо нескінченний цикл з перериванням break вкінці рядка
+while (true) {
+  let searchPos = str.indexOf(target, position);
+  if (searchPos == -1) break; // якщо рядок закінчився
+
+  alert('знайшли ' +target+ ' тут: '+ searchPos );
+  position = searchPos + 1; // продовжити пошук з наступного
+}*/
+/*// Get the user input from the form
+let number = document.getElementById("number").value;
+
+// Convert the number to a string and count the digits
+let numString = number.toString();
+let count = numString.length;
+
+// Display the result to the user
+document.getElementById("result").innerHTML = "The number " + number + " contains " + count + " digits.";*/
+let number=prompt("Enter number")
+document.write("in number "+number+" "+ number.length +" digits"+"<br>")
+for(let i=0;i<number.length;i++){
+  document.write(number[i]+"<br>")
+}
+    </script>
+</body>
+</html>
